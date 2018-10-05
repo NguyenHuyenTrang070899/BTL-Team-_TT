@@ -1,6 +1,8 @@
+
+
 import java.util.ArrayList;
 
-public class DictionnaryCommandLine
+public class DictionaryCommandLine
 {
     DictionaryManagement dictionarymanagement = new DictionaryManagement();
 
@@ -29,17 +31,14 @@ public class DictionnaryCommandLine
     public void dictionaryBasic(){
         this.setDictionaryManagement();
         this.setTxtDictionaryManagement();
-
         this.showAllWords();
     }
     public void dictionaryAdvanced() 
 	{
-        Dictionary word = new Dictionary();
+    	Dictionary dictionary = new Dictionary();
         DictionaryManagement input = new DictionaryManagement();     
-        input.insertFromFile(word);
-        showAllWords(word);   //in ra cac tu da nhap
-        
-        input.dictionaryLookup(word);
+        input.insertFromFile();
+        input.dictionaryLookup();
         
     }
 }

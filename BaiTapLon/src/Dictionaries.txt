@@ -1,4 +1,9 @@
-name    tên
-good    tốt
-bad     xấu
-home    nhà
+﻿all	tat ca
+big	to lon
+cat	con meo
+deep	sau
+example	vi du
+fix	sua chua
+good	tot
+house	ngoi nha
+ill	om
