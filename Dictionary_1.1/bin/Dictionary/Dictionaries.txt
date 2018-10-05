@@ -1,0 +1,3 @@
+word	tu ngu
+integer	so nguyen
+house	ngoi nha
