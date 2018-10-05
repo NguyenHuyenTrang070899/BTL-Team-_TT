@@ -1,0 +1,4 @@
+name    tên
+good    tốt
+bad     xấu
+home    nhà
