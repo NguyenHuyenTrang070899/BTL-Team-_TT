@@ -32,4 +32,14 @@ public class DictionnaryCommandLine
 
         this.showAllWords();
     }
+    public void dictionaryAdvanced() 
+	{
+        Dictionary word = new Dictionary();
+        DictionaryManagement input = new DictionaryManagement();     
+        input.insertFromFile(word);
+        showAllWords(word);   //in ra cac tu da nhap
+        
+        input.dictionaryLookup(word);
+        
+    }
 }
