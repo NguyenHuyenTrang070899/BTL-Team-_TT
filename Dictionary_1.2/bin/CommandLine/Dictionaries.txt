@@ -1,8 +1,8 @@
-﻿all	tat ca
+all	tat ca
 big	to lon
 cat	con meo
 deep	sau
-example	vi du
+exam	ki thi
 fix	sua chua
 good	tot
 house	ngoi nha

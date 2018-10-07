@@ -1,8 +1,8 @@
-
 public class Main
 {
     public static void main(String[] args) {
-        DictionnaryCommandLine dictionary_command_line = new DictionnaryCommandLine();
+        DictionaryCommandLine dictionary_command_line = new DictionaryCommandLine();
         dictionary_command_line.dictionaryBasic();
+        dictionary_command_line.dictionaryAdvanced();
     }
 }
