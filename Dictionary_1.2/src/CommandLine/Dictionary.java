@@ -1,52 +1,20 @@
-package CommandLine;
+﻿package CommandLine;
 
 import java.util.ArrayList;			// class de tao list array
-import java.util.Scanner;
 
-public class Dictionary{
-	private ArrayList<Word> list = new ArrayList();
+public class Dictionary
+{
+    private ArrayList<Word> list = new ArrayList();
 
-	//Hàm thêm từ mới vào list từ
-	public void setList(String word_target,String word_explain){
+    //HÃ m thÃªm tá»« má»›i vÃ o list tá»«
+    //Cáº§n thÃªm cÃ¡c test: tá»« Ä‘Ã£ cÃ³ trong tá»« Ä‘iá»ƒn, chuá»—i khÃ´ng pháº£i tá»«, chuá»—i rá»—ng
+    public void setList(String word_target,String word_explain){
+        Word new_word = new Word(word_target,word_explain);
+        this.list.add(new_word);
+    }
 
-		//check loi 
-		Scanner scan = new Scanner(System.in);
-		String lookup =scan.nextLine();
-		boolean isOK = true;
-		int left = 0 ,right = list.size();
-			do
-			{
-				int middle = (left +right)/2;
-				if (list.get(middle).getWordTarget().compareTo(lookup)==0 )
-				{
-					isOK = false;
-					break;
-				}
-				else
-					if (list.get(middle).getWordTarget().compareTo(lookup)>0)
-						right = middle -1 ;
-					else
-						left = middle +1;
-					
-			}
-			while(left <= right);
-			if (isOK == false)
-				System.out.println("Tu da co san trong bo nho");
-			
-
-		if(word_target.equals("")) {
-			isOK = false;
-			System.out.println("Tu khong hop le!");
-		}
-
-		if(isOK){
-			Word new_word = new Word(word_target,word_explain);
-			this.list.add(new_word);
-		}
-	}
-
-	//Hàm lấy list ra để làm việc
-	public ArrayList<Word> getList(){
-		return list;
-	}
+    //HÃ m láº¥y list ra Ä‘á»ƒ lÃ m viá»‡c
+    public ArrayList<Word> getList(){
+        return list;
+    }
 }

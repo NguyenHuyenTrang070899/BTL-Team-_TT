@@ -1,8 +1,11 @@
 all	tat ca
 big	to lon
+bug	loi
 cat	con meo
+call	goi dien
+can	cai can
 deep	sau
-example	vi du
+exam	ki thi
 fix	sua chua
 good	tot
 house	ngoi nha
