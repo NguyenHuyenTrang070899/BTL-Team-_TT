@@ -8,6 +8,7 @@ public class Main
 	public static void main(String[] args) 
 	{
 		DictionaryCommandLine dictionary_command_line = new DictionaryCommandLine();
+		dictionary_command_line.setTxtDictionaryManagement();
 		Scanner scan = new Scanner(System.in);
 		System.out.println("1. Insert From Commandline");
 		System.out.println("2. Show All Words");
@@ -21,15 +22,15 @@ public class Main
 			switch(number){
 				case 1 : { dictionary_command_line.setDictionaryManagement();
 							break;}
-				case 2 : { dictionary_command_line.Show();
+				case 2 : { dictionary_command_line.showAllWords();
 							break;}
-				case 3 : { dictionary_command_line.LookUp();
+				case 3 : { dictionary_command_line.dictionaryLookup();
 							break;}
-				case 4 : { dictionary_command_line.Searcher();
+				case 4 : { dictionary_command_line.dictionarySearcher();
 							break;}
-				case 5 : { dictionary_command_line.Export();
+				case 5 : { dictionary_command_line.dictionaryAdvanced();
 							break;}
-				case 6 : { dictionary_command_line.Delete();
+				case 6 : { dictionary_command_line.deleteWord();
 							break;}
 				case 7 : { System.out.println("Goodbye!");
 							break;}

@@ -16,6 +16,29 @@ public class DictionaryCommandLine{
 	public void setTxtDictionaryManagement(){
 		dictionarymanagement.insertFromFile();
 	}
+	public void addWord(String word_target,String word_explain)
+	{
+		ArrayList<Word> list = new ArrayList<Word>();
+        list = dictionarymanagement.getDictionary();
+		//check loi 
+		boolean isOK = true;
+		for(int i=0;i< list.size() ;i++)							//loi da ton tai tu trong danh sach
+			if( list.get(i).equals(word_target) ) {
+				isOK = false;
+				System.out.println("Tu da ton tai trong bo nho!");
+				break;
+			}
+
+		if(word_target.equals("")) {
+			isOK = false;
+			System.out.println("Tu khong hop le!");
+		}
+
+		if(isOK){
+			Word new_word = new Word(word_target,word_explain);
+			list.add(new_word);
+		}
+	}
 
 	//Ham tim kiem 1 tu trong danh sach
 	public void dictionaryLookup(){
@@ -97,33 +120,12 @@ public class DictionaryCommandLine{
 
 	//In ra tu dien theo cot
 	public void showAllWords(){
-        ArrayList<Word> list = new ArrayList<Word>();
-        list = dictionarymanagement.getDictionary();
-        System.out.println("No"+"	"+"| English"+"	"+"| Vietnamese");
-        for(int i=0;i<list.size();i++){
-            System.out.println((i+1)+"	"+"| "+list.get(i).getWordTarget()+"		"+"| "+list.get(i).getWordExplain());
-        }
-    }
-	public void LookUp(){
-		this.setTxtDictionaryManagement();
-		this.dictionaryLookup();
-	}
-	public void Searcher(){
-		this.setTxtDictionaryManagement();
-		this.dictionarySearcher();
-	}
-	public void Show(){
-		this.setTxtDictionaryManagement();
-		this.showAllWords();
-	}
-	public void Delete(){
-		this.setTxtDictionaryManagement();
-		this.deleteWord();
-	}
-	public void Export(){
-		DictionaryManagement input = new DictionaryManagement();     
-		this.setTxtDictionaryManagement();
-		input.exportToFile();
+		ArrayList<Word> list = new ArrayList();
+		list = dictionarymanagement.getDictionary();
+		System.out.println("No"+"\t"+"| "+String.format("%-20s","English")+"|       Vietnamese");
+		for(int i=0;i<list.size();i++){
+			System.out.println((i+1)+"\t"+"| "+String.format("%-20s",list.get(i).getWordTarget())+"| "+list.get(i).getWordExplain());
+		}
 	}
 
 	//Ham tong hop tat ca cac ham
