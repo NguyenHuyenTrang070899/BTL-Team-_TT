@@ -1,9 +1,9 @@
 all	tat ca
 big	to lon
 bug	loi
-cat	con meo
 call	goi dien
 can	cai can
+cat	con meo
 deep	sau
 exam	ki thi
 fix	sua chua
