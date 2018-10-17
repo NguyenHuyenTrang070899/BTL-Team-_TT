@@ -1,5 +1,5 @@
 
-//package firstswingexample;
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.BorderFactory;
@@ -12,7 +12,6 @@ import javax.swing.JTextField;
 import javax.swing.border.Border;
 import  java.awt.Color;
 
-
 class Dictionary extends JFrame implements ActionListener{
     JTextField Input;
     JTextArea Output;
@@ -20,17 +19,18 @@ class Dictionary extends JFrame implements ActionListener{
     JLabel english,vietnamese;
     JPanel pn,pn1,pn2;
     Search Dic = new  Search();
-  //static boolean anhViet = true;
     private final Border raisedBevel = BorderFactory.createRaisedBevelBorder();
     Dictionary(){
 
         super("Dictionary Anh - Việt");
         Input = new JTextField();
         Input.setBounds(20,40,170,30);
-
+        
         Output = new JTextArea();
         Output.setBounds(290,40,350,400);
         Output.setFocusable(false);
+        Output.setLineWrap(true);
+        Output.setWrapStyleWord(true);
 
         b1 = new JButton("Dịch");
         b1.setBounds(200,40,70,30);
