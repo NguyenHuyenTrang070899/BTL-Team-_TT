@@ -7,12 +7,25 @@
     <option name="height" value="688" />
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538940555053" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539749570366" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Dictionary">
+    <configuration name="Dictionary (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="firstswingexample.Dictionary" />
+      <module name="DoHoaBTL" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="firstswingexample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Dictionary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Dictionary" />
       <module name="DoHoaBTL" />
@@ -20,9 +33,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Dictionary" />
+      <item itemvalue="Application.Dictionary (1)" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Dictionary" />
+        <item itemvalue="Application.Dictionary (1)" />
       </list>
     </recent_temporary>
   </component>
