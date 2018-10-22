@@ -14,7 +14,7 @@ public class MainFrame extends javax.swing.JFrame {
     ModifyDic modify = new ModifyDic();
     ModifyFrame mf;
     
-    String path = "data/E_V.zip", recentPath = "data/recentWordE_V.txt";
+    String path = "data\\E_V.zip", recentPath = "data\\recentWordE_V.txt";
     String fileName = "E_V.txt";
     DefaultListModel modelRecent ;
     DefaultListModel model ;
@@ -458,8 +458,8 @@ public class MainFrame extends javax.swing.JFrame {
     private void btSwitchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btSwitchActionPerformed
         if(btSwitch.getText().equals("E->V")){
             btSwitch.setText("V->E");
-            path = "data/V_E.zip";
-            recentPath = "data/recentWordV_E.txt";
+            path = "data\\V_E.zip";
+            recentPath = "data\\recentWordV_E.txt";
             fileName = "V_E.txt";
             data.readIn(path);
             recentList = recent.readIn(recentPath);
@@ -469,8 +469,8 @@ public class MainFrame extends javax.swing.JFrame {
 
         else{
             btSwitch.setText("E->V");
-            path = "data/E_V.zip";
-            recentPath = "data/recentWordE_V.txt";
+            path = "data\\E_V.zip";
+            recentPath = "data\\recentWordE_V.txt";
             fileName = "E_V.txt";
             data.readIn(path);
             recentList = recent.readIn(recentPath);

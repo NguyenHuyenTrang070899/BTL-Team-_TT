@@ -1,7 +1,3 @@
--merous
--tron
--trophin
-1-byte character
 1-byte character set
 huger
 huguenot
@@ -16,5 +12,9 @@ hugged
 overlooks
 overlook
 overloading
-hello
 yes
+key
+UET
+VNU
+hello
+yess
